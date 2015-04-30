@@ -1,0 +1,20 @@
+ {{#paper-sidenav classNames="md-sidenav-left md-whiteframe-z2 ember-app" flex-layout="column" flex=true}}
+    {{#paper-toolbar}}
+      <div class="md-toolbar-tools">
+        <div class="logo">
+           {{paper-icon icon="google-plus"}}
+           <strong>Home</strong>
+        </div>
+      </div>
+    {{/paper-toolbar}}
+
+    {{#paper-content}}
+      <nav class="sidenav">
+        <ul>
+          <li>{{#link-to "home"}}Home{{/link-to}}</li>
+          <li>{{#link-to "post"}}Post{{/link-to}}</li>
+          <li>{{#link-to "photo"}}Photosssss{{/link-to}}</li>
+        </ul>
+      </nav>
+    {{/paper-content}}
+  {{/paper-sidenav}}

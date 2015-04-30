@@ -1,0 +1,19 @@
+{{#paper-card}}
+  {{#paper-toolbar}}
+     <div class="md-toolbar-tools">
+       <h2 flex=true>Welcome!</h2>
+       {{paper-icon icon="google-plus"}}
+     </div>
+  {{/paper-toolbar}}
+  {{#paper-card-content}}
+
+    <div class="md-toolbar-tools">
+        {{#paper-button raised=true classNames="md-primary" action="userLogin" disabled=noErrors}}Login{{/paper-button}}
+    </div>
+  {{#if errorMessage}}
+    <div class="error-message">{{errorMessage}}</div>
+  {{/if}}
+  {{/paper-card-content}}
+{{/paper-card}}
+
+{{outlet}}

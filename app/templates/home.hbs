@@ -1,0 +1,18 @@
+{{#paper-nav-container classNames="ember-app"}}
+  {{partial "sidebarnav"}}
+
+  {{#paper-content flex-layout="column" flex=true}}
+    {{#paper-toolbar}}
+    <div class="md-toolbar-tools">
+      <h2 flex=true class="md-toolbar-tools">
+        {{#paper-sidenav-toggle class="menu-sidenav-toggle"}}
+          {{paper-icon icon="menu"}}
+        {{/paper-sidenav-toggle}}
+        Home 
+      </h2>
+    </div>
+    {{/paper-toolbar}}
+
+  {{/paper-content}}
+
+{{/paper-nav-container}}
